@@ -1,0 +1,1 @@
+sass --watch D:\Developer\wamp64\www\afiliadosAtlas\assets\scss\style.scss:D:\Developer\wamp64\www\afiliadosAtlas\assets\scss\style.css
