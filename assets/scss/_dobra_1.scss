@@ -1,5 +1,5 @@
 .dobra_1 {
-    min-height: 100vh;
+    min-height: 940px;
 
     @media screen and (min-width:1024px) {
         background-image: url("./../../src/img/dobra_1/BG.png");
@@ -45,10 +45,6 @@
         @media screen and (min-width:1024px) {
             font-size: 22px;
         }
-
-        // @media screen and (min-width:1440px) {
-        //     font-size: 26px;
-        // }
     }
 
     a.btn-hero {

@@ -70,7 +70,7 @@ header#header nav.navbar .btn-login:hover {
 }
 
 .dobra_1 {
-  min-height: 100vh;
+  min-height: 940px;
 }
 @media screen and (min-width: 1024px) {
   .dobra_1 {
@@ -171,6 +171,61 @@ header#header nav.navbar .btn-login:hover {
 @media screen and (min-width: 1024px) {
   .dobra_1 img.img-fluid {
     display: none;
+  }
+}
+
+section.dobra_2 ul {
+  justify-content: center;
+}
+section.dobra_2 ul li {
+  background-color: var(--bg-color);
+  border: none !important;
+}
+section.dobra_2 ul li.border-x {
+  border-left: 2px solid !important;
+  border-right: 2px solid !important;
+}
+section.dobra_2 ul li span {
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  section.dobra_2 ul li span {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.dobra_2 ul li span {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section.dobra_2 ul li span {
+    font-size: 32px;
+  }
+}
+section.dobra_2 h2 {
+  color: var(--black);
+  font-weight: 700;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  section.dobra_2 h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.dobra_2 h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section.dobra_2 h2 {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  section.dobra_2 h2 {
+    font-size: 42px;
   }
 }
 
