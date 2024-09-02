@@ -35,7 +35,10 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  font-family: SpaceGrotesk-bold;
+}
+
 .btn {
   font-family: SpaceGrotesk-Regular;
 }
@@ -97,7 +100,7 @@ header#header nav.navbar .btn-login:hover {
 }
 @media screen and (max-width: 768px) {
   .dobra_1 h2 {
-    font-size: 22px;
+    font-size: 28px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -237,7 +240,7 @@ section.dobra_2 h2 {
 }
 @media screen and (min-width: 1440px) {
   section.dobra_2 h2 {
-    font-size: 42px;
+    font-size: 36px;
   }
 }
 
@@ -263,7 +266,7 @@ section.dobra_3 h2 {
 }
 @media screen and (min-width: 1440px) {
   section.dobra_3 h2 {
-    font-size: 42px;
+    font-size: 36px;
   }
 }
 
@@ -280,6 +283,11 @@ section.dobra_4 h2 {
 @media screen and (min-width: 768px) {
   section.dobra_4 h2 {
     font-size: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  section.dobra_4 h2 {
+    font-size: 36px;
   }
 }
 section.dobra_4 p {
@@ -303,7 +311,7 @@ section.dobra_4 ul.custom-list {
   /* Remove o recuo padrão, se necessário */
 }
 section.dobra_4 ul.custom-list li {
-  margin-top: 0.6rem;
+  margin-top: 1rem;
   position: relative;
   padding-left: 2rem;
   /* Espaço para o ícone */
@@ -327,6 +335,7 @@ section.dobra_4 a.btn-hero {
   text-align: center;
   color: var(--branco);
   max-width: 100%;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   section.dobra_4 a.btn-hero {
@@ -364,6 +373,11 @@ section.dobra_5 h2 {
     font-size: 32px;
   }
 }
+@media screen and (min-width: 1440px) {
+  section.dobra_5 h2 {
+    font-size: 36px;
+  }
+}
 section.dobra_5 p {
   font-weight: 400;
   text-align: left;
@@ -385,6 +399,7 @@ section.dobra_5 a.btn-hero {
   text-align: center;
   color: var(--branco);
   max-width: 100%;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   section.dobra_5 a.btn-hero {
@@ -422,7 +437,6 @@ footer.dobra_6 .btn-cadastro {
 footer.dobra_6 .btn-login {
   border-radius: 12px;
   background-color: #ebebeb;
-  font-weight: 700;
   text-align: center;
   color: var(--orange);
   max-width: 100%;
@@ -464,6 +478,7 @@ footer.dobra_6 .footer-end {
   align-items: center;
   min-height: 40vh;
   transition: transform 0.5s ease;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 500px) {
   .carousel-items {
