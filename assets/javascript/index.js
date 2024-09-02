@@ -22,6 +22,8 @@ $(document).ready(function () {
 
         $(".carousel-dots .dot").removeClass("active");
         $(".carousel-dots .dot").eq(activeIndex).addClass("active");
+
+        console.log("movel");
     }
 
     function moveCarousel(direction) {
