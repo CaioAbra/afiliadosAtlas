@@ -31,6 +31,14 @@ footer.dobra_6 .footer-end {
     border-top: 1px solid #e8e8e8;
 }
 
+.footer-end{
+    font-size: 12px;
+}
+
+.footer-end a{
+    color: var(--black);
+}
+
 /* @media screen and (max-width: 768px){
     .dobra_6 .footer-top{
 
