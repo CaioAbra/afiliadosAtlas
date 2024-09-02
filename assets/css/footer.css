@@ -24,6 +24,13 @@ footer.dobra_6 .btn-login {
     border: 1px solid var(--orange);
 }
 
+footer.dobra_6 .footer-end {
+    background-color: #ebebeb;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid #e8e8e8;
+}
+
 /* @media screen and (max-width: 768px){
     .dobra_6 .footer-top{
 
