@@ -76,12 +76,10 @@ $(document).ready(function () {
 
     $(".slider-prev").click(function () {
         moveCarousel("prev");
-        updateActiveItem()
     });
 
     $(".slider-next").click(function () {
         moveCarousel("next");
-        updateActiveItem()
     });
 
     $(".carousel-dots .dot").click(function () {
