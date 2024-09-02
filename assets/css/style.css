@@ -243,6 +243,16 @@ section.dobra_2 h2 {
     font-size: 36px;
   }
 }
+section.dobra_2 .card {
+  border: solid 1px var(--orange);
+  background-color: var(--bg-color);
+  height: 36rem;
+}
+section.dobra_2 .card svg {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
 section.dobra_3 h2 {
   color: var(--black);
   font-weight: 700;

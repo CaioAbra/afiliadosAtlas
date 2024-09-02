@@ -59,7 +59,14 @@ section.dobra_2 {
 
     }
 
-    card{
-        
+    .card {
+        border: solid 1px var(--orange);
+        background-color: var(--bg-color);
+        height: 36rem;
+
+        svg {
+            margin-top: 2rem;
+            margin-left: 1rem;
+        }
     }
 }
