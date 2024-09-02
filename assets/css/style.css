@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --bg-color: #f5f5f5;
   --orange: #DE8734;
@@ -227,6 +228,140 @@ section.dobra_2 h2 {
   section.dobra_2 h2 {
     font-size: 42px;
   }
+}
+
+section.dobra_3 h2 {
+  color: var(--black);
+  font-weight: 700;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  section.dobra_3 h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.dobra_3 h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section.dobra_3 h2 {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  section.dobra_3 h2 {
+    font-size: 42px;
+  }
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-items {
+  position: relative;
+  max-width: 80% !important;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  min-height: 40vh;
+  transition: transform 0.5s ease;
+}
+@media screen and (max-width: 500px) {
+  .carousel-items {
+    min-height: 50vh;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .carousel-items {
+    min-height: 55vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carousel-items {
+    min-height: 42vh;
+    display: flex;
+  }
+}
+
+.carousel-items .item {
+  position: relative;
+  flex: 0 0 33.33%;
+  /* Ajuste para o número de itens visíveis */
+  max-width: 33.33%;
+  text-align: center;
+  transition: transform 0.5s ease;
+  /* Suavizar a transformação */
+  transform: scale(0.8);
+  border-radius: 1rem;
+}
+@media screen and (max-width: 500px) {
+  .carousel-items .item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carousel-items .item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carousel-items .item {
+    flex: 0 0 34%;
+    max-width: 34%;
+  }
+}
+
+.carousel-items .item .description-container {
+  column-count: 2;
+  column-gap: 0;
+  display: inline-block;
+}
+
+.carousel-items .item .description {
+  max-width: 250px;
+  margin: 0 auto;
+  display: none;
+}
+
+.row-icons-prev-next {
+  justify-content: center;
+}
+
+.carousel-items .active .description {
+  display: block;
+}
+
+.slider-prev,
+.slider-next {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.slider-prev svg,
+.slider-next svg {
+  width: 1.25rem;
+  color: black;
+}
+
+.slider-prev {
+  left: 10px;
+  /* Ajuste a posição */
+}
+
+.slider-next {
+  right: 10px;
+  /* Ajuste a posição */
 }
 
 * {
