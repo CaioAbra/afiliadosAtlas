@@ -1,12 +1,12 @@
 // carousel
 $(document).ready(function () {
-    var itemWidth = $(".carousel-items .item").outerWidth(true);
+    var itemWidth;
     var itemCount = $(".carousel-items .item").length;
-    var windowWidth = $(window).width();
-    var visibleItems = 3;
-    var responsiveThreshold1 = 500;
-    var responsiveThreshold2 = 768;
+    var visibleItems = 3; // Número de itens visíveis
+    var responsiveThreshold1 = 500; // Limite de largura para dispositivos até 500px
+    var responsiveThreshold2 = 768; // Limite de largura para dispositivos de 501px a 767px
 
+    // Gerar os dots de acordo com o número de itens
     function generateDots() {
         for (var i = 0; i < itemCount; i++) {
             $(".carousel-dots").append('<div class="dot" data-index="' + i + '"></div>');
@@ -15,15 +15,9 @@ $(document).ready(function () {
     }
 
     function updateActiveItem() {
-        var activeIndex = Math.floor($(".carousel-items").scrollLeft() / itemWidth) % itemCount;
-
-        $(".carousel-items .item").removeClass("active");
-        $(".carousel-items .item").eq(activeIndex).addClass("active");
-
+        var activeIndex = $(".carousel-items .item.active").index();
         $(".carousel-dots .dot").removeClass("active");
         $(".carousel-dots .dot").eq(activeIndex).addClass("active");
-
-        console.log("movel");
     }
 
     function moveCarousel(direction) {
@@ -51,6 +45,8 @@ $(document).ready(function () {
     }
 
     function adjustCarousel() {
+        var windowWidth = $(window).width();
+
         if (windowWidth <= responsiveThreshold1) {
             visibleItems = 1;
         } else if (windowWidth <= responsiveThreshold2) {
@@ -93,5 +89,6 @@ $(document).ready(function () {
             }
         }
     });
-});
 
+    updateActiveItem();
+});
