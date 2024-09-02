@@ -31,12 +31,18 @@ footer.dobra_6 .footer-end {
     border-top: 1px solid #e8e8e8;
 }
 
-.footer-end{
+.footer-end {
     font-size: 12px;
 }
 
-.footer-end a{
+.footer-end a {
     color: var(--black);
+    transition: all .5s ease;
+}
+
+.footer-end a:hover {
+    color: #e8e8e8;
+    text-decoration: none;
 }
 
 /* @media screen and (max-width: 768px){
