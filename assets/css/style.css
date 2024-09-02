@@ -407,6 +407,7 @@ section.dobra_5 a.btn-hero {
   align-items: center;
   min-height: 40vh;
   transition: transform 0.5s ease;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 500px) {
   .carousel-items {
