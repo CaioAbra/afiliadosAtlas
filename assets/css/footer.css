@@ -2,6 +2,7 @@ footer.dobra_6 {
     background-color: #ebebeb;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    border-top: 1px solid #e8e8e8;
 }
 
 footer.dobra_6 .btn-cadastro {
@@ -15,9 +16,16 @@ footer.dobra_6 .btn-cadastro {
 
 footer.dobra_6 .btn-login {
     border-radius: 12px;
-    background-color: var(--branco);
+    background-color: #ebebeb;
     font-weight: 700;
     text-align: center;
     color: var(--orange);
     max-width: 100%;
+    border: 1px solid var(--orange);
 }
+
+/* @media screen and (max-width: 768px){
+    .dobra_6 .footer-top{
+
+    }
+} */
