@@ -49,7 +49,7 @@ footer.dobra_6 .footer-end {
 .carousel-dots {
     display: flex;
     justify-content: center;
-    padding-top: 15px;
+    /* padding-top: 15px; */
 }
 
 .carousel-dots .dot {

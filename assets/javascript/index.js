@@ -15,38 +15,33 @@ $(document).ready(function () {
     }
 
     function updateActiveItem() {
+        var activeIndex = Math.floor($(".carousel-items").scrollLeft() / itemWidth) % itemCount;
+
         $(".carousel-items .item").removeClass("active");
-        var activeItemIndex = Math.floor(visibleItems / 2);
-        $(".carousel-items .item:nth-child(" + (activeItemIndex + 1) + ")").addClass("active");
+        $(".carousel-items .item").eq(activeIndex).addClass("active");
 
         $(".carousel-dots .dot").removeClass("active");
-        var currentIndex = $(".carousel-items .item.active").index();
-        $(".carousel-dots .dot").eq(currentIndex).addClass("active");
+        $(".carousel-dots .dot").eq(activeIndex).addClass("active");
     }
 
     function moveCarousel(direction) {
-        var currentPosition = parseInt($(".carousel-items").css("left"));
-        var newPosition;
-
         if (direction === "next") {
-            newPosition = currentPosition - itemWidth;
             $(".carousel-items").animate(
-                { left: newPosition },
+                { scrollLeft: "+=" + itemWidth },
                 500,
                 function () {
                     $(".carousel-items .item:first").appendTo(".carousel-items");
-                    $(".carousel-items").css("left", 0);
+                    $(".carousel-items").scrollLeft(0);
                     updateActiveItem();
                 }
             );
         } else {
-            newPosition = currentPosition + itemWidth;
             $(".carousel-items").animate(
-                { left: newPosition },
+                { scrollLeft: "-=" + itemWidth },
                 500,
                 function () {
                     $(".carousel-items .item:last").prependTo(".carousel-items");
-                    $(".carousel-items").css("left", -itemWidth);
+                    $(".carousel-items").scrollLeft(itemWidth);
                     updateActiveItem();
                 }
             );
@@ -64,6 +59,7 @@ $(document).ready(function () {
 
         itemWidth = $(".carousel-items .item").outerWidth(true);
         $(".carousel-items").width(itemWidth * itemCount);
+        $(".carousel-items").scrollLeft(0);
         updateActiveItem();
     }
 
@@ -83,12 +79,17 @@ $(document).ready(function () {
     });
 
     $(".carousel-dots .dot").click(function () {
-        var index = $(this).data("index");
+        var index = $(this).index();
         var activeIndex = $(".carousel-items .item.active").index();
-        var direction = index > activeIndex ? "next" : "prev";
 
-        while (index !== $(".carousel-items .item.active").index()) {
-            moveCarousel(direction);
+        if (index !== activeIndex) {
+            var difference = index - activeIndex;
+            var direction = difference > 0 ? "next" : "prev";
+
+            for (var i = 0; i < Math.abs(difference); i++) {
+                moveCarousel(direction);
+            }
         }
     });
 });
+

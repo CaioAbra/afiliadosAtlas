@@ -470,6 +470,8 @@ section.dobra_5 a.btn-hero {
 
 .row-icons-prev-next {
   justify-content: center;
+  align-items: center;
+
 }
 
 .carousel-items .active .description {
