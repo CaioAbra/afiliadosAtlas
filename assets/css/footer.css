@@ -1,3 +1,21 @@
-footer.dobra_6{
+footer.dobra_6 {
     background-color: #ebebeb;
+}
+
+footer.dobra_6 .btn-cadastro {
+    border-radius: 12px;
+    background-color: var(--orange);
+    font-weight: 700;
+    text-align: center;
+    color: var(--branco);
+    max-width: 100%;
+}
+
+footer.dobra_6 .btn-login {
+    border-radius: 12px;
+    background-color: var(--branco);
+    font-weight: 700;
+    text-align: center;
+    color: var(--orange);
+    max-width: 100%;
 }
