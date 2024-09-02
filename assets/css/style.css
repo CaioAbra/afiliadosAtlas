@@ -526,13 +526,13 @@ body {
 /*# sourceMappingURL=style.css.map */
 
 
-footer.dobra_6 {
+.dobra_6 {
   background-color: #ebebeb;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-footer.dobra_6 .btn-cadastro {
+.dobra_6 .btn-cadastro {
   border-radius: 12px;
   background-color: var(--orange);
   font-weight: 700;
@@ -541,7 +541,7 @@ footer.dobra_6 .btn-cadastro {
   max-width: 100%;
 }
 
-footer.dobra_6 .btn-login {
+.dobra_6 .btn-login {
   border-radius: 12px;
   background-color: var(--branco);
   font-weight: 700;
