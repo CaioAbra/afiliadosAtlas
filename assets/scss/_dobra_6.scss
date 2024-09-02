@@ -1,0 +1,46 @@
+footer.dobra_6 {
+    background-color: #ebebeb;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid #dbdbdb;
+}
+
+footer.dobra_6 .btn-cadastro {
+    border-radius: 12px;
+    background-color: var(--orange);
+    font-weight: 700;
+    text-align: center;
+    color: var(--branco);
+    max-width: 100%;
+}
+
+footer.dobra_6 .btn-login {
+    border-radius: 12px;
+    background-color: #ebebeb;
+    font-weight: 700;
+    text-align: center;
+    color: var(--orange);
+    max-width: 100%;
+    border: 1px solid var(--orange);
+}
+
+footer.dobra_6 .footer-end {
+    background-color: #ebebeb;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid #e8e8e8;
+}
+
+.footer-end {
+    font-size: 12px;
+}
+
+.footer-end a {
+    color: var(--black);
+    transition: all .5s ease;
+}
+
+.footer-end a:hover {
+    color: #e8e8e8;
+    text-decoration: none;
+}

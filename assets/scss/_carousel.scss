@@ -5,7 +5,7 @@
 
 .carousel-items {
     position: relative;
-    
+
     max-width: 80% !important;
     margin: 0 auto;
     padding: 0;
@@ -98,6 +98,7 @@
 
 .row-icons-prev-next {
     justify-content: center;
+    align-items: center;
 }
 
 .carousel-items .active .description {
@@ -131,4 +132,25 @@
 .slider-next {
     right: 10px;
     /* Ajuste a posição */
+}
+
+/* carousel */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    /* padding-top: 15px; */
+}
+
+.carousel-dots .dot {
+    width: 40px;
+    height: 2px;
+    margin: 0 5px;
+    background-color: #B9B9B9;
+    /* border-radius: 50%; */
+    cursor: pointer;
+}
+
+.carousel-dots .dot.active {
+    background-color: #FF7F00;
+    /* Cor do dot ativo */
 }

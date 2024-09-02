@@ -5,6 +5,18 @@
         background-image: url("./../../src/img/dobra_1/BG.png");
         background-repeat: no-repeat;
         background-size: contain;
+
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1024px) {
+            background-position-y: 4.75rem;
+        }
+
+        @media screen and (min-width:1440px) {
+            background-position-y: -1rem;
+        }
+
     }
 
     h2 {
@@ -55,6 +67,7 @@
         text-align: center;
         color: var(--branco);
         max-width: 100%;
+        width: 100%;
 
         @media screen and (max-width:768px) {
             font-size: 16px;

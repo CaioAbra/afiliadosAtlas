@@ -80,6 +80,16 @@ header#header nav.navbar .btn-login:hover {
     background-size: contain;
   }
 }
+@media screen and (min-width: 1024px) and (min-width: 1024px) {
+  .dobra_1 {
+    background-position-y: 4.75rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 1440px) {
+  .dobra_1 {
+    background-position-y: -1rem;
+  }
+}
 .dobra_1 h2 {
   color: var(--black);
   font-weight: 700;
@@ -393,6 +403,53 @@ section.dobra_5 a.btn-hero {
     font-size: 22px;
   }
 }
+footer.dobra_6 {
+  background-color: #ebebeb;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #dbdbdb;
+}
+
+footer.dobra_6 .btn-cadastro {
+  border-radius: 12px;
+  background-color: var(--orange);
+  font-weight: 700;
+  text-align: center;
+  color: var(--branco);
+  max-width: 100%;
+}
+
+footer.dobra_6 .btn-login {
+  border-radius: 12px;
+  background-color: #ebebeb;
+  font-weight: 700;
+  text-align: center;
+  color: var(--orange);
+  max-width: 100%;
+  border: 1px solid var(--orange);
+}
+
+footer.dobra_6 .footer-end {
+  background-color: #ebebeb;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #e8e8e8;
+}
+
+.footer-end {
+  font-size: 12px;
+}
+
+.footer-end a {
+  color: var(--black);
+  transition: all 0.5s ease;
+}
+
+.footer-end a:hover {
+  color: #e8e8e8;
+  text-decoration: none;
+}
+
 .carousel {
   position: relative;
   overflow: hidden;
@@ -407,7 +464,6 @@ section.dobra_5 a.btn-hero {
   align-items: center;
   min-height: 40vh;
   transition: transform 0.5s ease;
-  overflow-x: hidden;
 }
 @media screen and (max-width: 500px) {
   .carousel-items {
@@ -471,7 +527,6 @@ section.dobra_5 a.btn-hero {
 .row-icons-prev-next {
   justify-content: center;
   align-items: center;
-
 }
 
 .carousel-items .active .description {
@@ -502,6 +557,27 @@ section.dobra_5 a.btn-hero {
 .slider-next {
   right: 10px;
   /* Ajuste a posição */
+}
+
+/* carousel */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  /* padding-top: 15px; */
+}
+
+.carousel-dots .dot {
+  width: 40px;
+  height: 2px;
+  margin: 0 5px;
+  background-color: #B9B9B9;
+  /* border-radius: 50%; */
+  cursor: pointer;
+}
+
+.carousel-dots .dot.active {
+  background-color: #FF7F00;
+  /* Cor do dot ativo */
 }
 
 * {
