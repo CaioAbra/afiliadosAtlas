@@ -45,8 +45,23 @@ footer.dobra_6 .footer-end {
     text-decoration: none;
 }
 
-/* @media screen and (max-width: 768px){
-    .dobra_6 .footer-top{
+/* carousel */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
 
-    }
-} */
+.carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #B9B9B9;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-dots .dot.active {
+    background-color: #FF7F00;
+    /* Cor do dot ativo */
+}
