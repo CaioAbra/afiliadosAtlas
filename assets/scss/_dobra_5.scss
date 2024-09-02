@@ -1,0 +1,61 @@
+section.dobra_5 {
+    h2 {
+        color: var(--black);
+        font-weight: 700;
+        text-align: left;
+
+        @media screen and (max-width:768px) {
+            font-size: 22px;
+        }
+
+        @media screen and (min-width:768px) {
+            font-size: 32px;
+        }
+
+
+    }
+
+    p {
+        font-weight: 400;
+        text-align: left;
+
+        @media screen and (max-width:768px) {
+            font-size: 18px;
+        }
+
+        @media screen and (min-width:768px) {
+            font-size: 18px;
+        }
+
+
+    }
+
+
+    a.btn-hero {
+
+        border-radius: 12px;
+        background-color: var(--orange);
+        font-weight: 700;
+        text-align: center;
+        color: var(--branco);
+        max-width: 100%;
+
+        @media screen and (max-width:768px) {
+            font-size: 16px;
+            padding: 1rem 1.625rem;
+        }
+
+        @media screen and (min-width:768px) {
+            font-size: 18px;
+        }
+
+        @media screen and (min-width:1024px) {
+            padding: 1rem 3rem;
+            font-size: 22px;
+        }
+
+        @media screen and (min-width:1440px) {
+            // font-size: 42px;
+        }
+    }
+}

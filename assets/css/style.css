@@ -256,6 +256,142 @@ section.dobra_3 h2 {
   }
 }
 
+section.dobra_4 h2 {
+  color: var(--black);
+  font-weight: 700;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  section.dobra_4 h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.dobra_4 h2 {
+    font-size: 32px;
+  }
+}
+section.dobra_4 p {
+  font-weight: 400;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  section.dobra_4 p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.dobra_4 p {
+    font-size: 18px;
+  }
+}
+section.dobra_4 ul.custom-list {
+  list-style: none;
+  /* Remove o marcador padrão */
+  padding-left: 0;
+  /* Remove o recuo padrão, se necessário */
+}
+section.dobra_4 ul.custom-list li {
+  margin-top: 0.6rem;
+  position: relative;
+  padding-left: 2rem;
+  /* Espaço para o ícone */
+}
+section.dobra_4 ul.custom-list li::before {
+  content: url("./../../src/img/dobra_4/check.svg");
+  /* Caminho para o SVG */
+  position: absolute;
+  left: 0;
+  /* Posiciona o ícone no início do item da lista */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  /* Ajuste conforme necessário */
+  height: auto;
+}
+section.dobra_4 a.btn-hero {
+  border-radius: 12px;
+  background-color: var(--orange);
+  font-weight: 700;
+  text-align: center;
+  color: var(--branco);
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  section.dobra_4 a.btn-hero {
+    font-size: 16px;
+    padding: 1rem 1.625rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.dobra_4 a.btn-hero {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section.dobra_4 a.btn-hero {
+    padding: 1rem 3rem;
+    font-size: 22px;
+  }
+}
+section.dobra_4 .align-end {
+  align-items: end;
+}
+
+section.dobra_5 h2 {
+  color: var(--black);
+  font-weight: 700;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  section.dobra_5 h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.dobra_5 h2 {
+    font-size: 32px;
+  }
+}
+section.dobra_5 p {
+  font-weight: 400;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  section.dobra_5 p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.dobra_5 p {
+    font-size: 18px;
+  }
+}
+section.dobra_5 a.btn-hero {
+  border-radius: 12px;
+  background-color: var(--orange);
+  font-weight: 700;
+  text-align: center;
+  color: var(--branco);
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  section.dobra_5 a.btn-hero {
+    font-size: 16px;
+    padding: 1rem 1.625rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.dobra_5 a.btn-hero {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section.dobra_5 a.btn-hero {
+    padding: 1rem 3rem;
+    font-size: 22px;
+  }
+}
 .carousel {
   position: relative;
   overflow: hidden;
