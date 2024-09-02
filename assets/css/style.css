@@ -131,6 +131,7 @@ header#header nav.navbar .btn-login:hover {
   text-align: center;
   color: var(--branco);
   max-width: 100%;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .dobra_1 a.btn-hero {
