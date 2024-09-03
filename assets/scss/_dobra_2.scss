@@ -62,14 +62,14 @@ section.dobra_2 {
     .card {
         border: solid 1px var(--orange);
         background-color: var(--bg-color);
-        height: 36rem;
+
 
         svg {
             margin-top: 2rem;
             margin-left: 1rem;
         }
 
-        .bg-svg{
+        .bg-svg {
             margin-top: 2rem;
             margin-left: 1rem;
             background-color: var(--orange);
@@ -78,6 +78,17 @@ section.dobra_2 {
             border-radius: 12px;
             text-align: center;
             align-content: center;
+        }
+
+
+
+        @media screen and (max-width:768px) {
+            padding-bottom: 2rem;
+            ;
+        }
+
+        @media screen and (min-width:768px) {
+            height: 36rem;
         }
     }
 }
