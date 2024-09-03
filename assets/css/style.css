@@ -615,6 +615,10 @@ footer.dobra_6 .footer-end {
   width: 1.25rem;
   color: black;
 }
+.slider-prev svg:hover path,
+.slider-next svg:hover path {
+  stroke: var(--orange);
+}
 
 .slider-prev {
   left: 10px;
@@ -635,7 +639,7 @@ footer.dobra_6 .footer-end {
 
 .carousel-dots .dot {
   width: 40px;
-  height: 2px;
+  height: 4px;
   margin: 0 5px;
   background-color: #B9B9B9;
   /* border-radius: 50%; */

@@ -1,11 +1,11 @@
-// carousel
 $(document).ready(function () {
     var itemWidth = $(".carousel-items .item").outerWidth(true);
     var itemCount = $(".carousel-items .item").length;
     var windowWidth = $(window).width();
-    var visibleItems = 3; 
+    var visibleItems = 3;
     var responsiveThreshold1 = 500;
     var responsiveThreshold2 = 768;
+    var currentIndex = 0;
 
     function generateDots() {
         for (var i = 0; i < itemCount; i++) {
@@ -16,22 +16,17 @@ $(document).ready(function () {
 
     function updateActiveItem() {
         $(".carousel-items .item").removeClass("active");
-        var activeItemIndex = Math.floor(visibleItems / 2);
-        $(".carousel-items .item:nth-child(" + (activeItemIndex + 1) + ")").addClass("active");
+        $(".carousel-items .item").eq(currentIndex).addClass("active");
 
         $(".carousel-dots .dot").removeClass("active");
-        var currentIndex = $(".carousel-items .item.active").index();
         $(".carousel-dots .dot").eq(currentIndex).addClass("active");
     }
 
     function moveCarousel(direction) {
-        var currentPosition = parseInt($(".carousel-items").css("left"));
-        var newPosition;
-
         if (direction === "next") {
-            newPosition = currentPosition - itemWidth;
+            currentIndex = (currentIndex + 1) % itemCount;
             $(".carousel-items").animate(
-                { left: newPosition },
+                { left: -itemWidth },
                 500,
                 function () {
                     $(".carousel-items .item:first").appendTo(".carousel-items");
@@ -40,13 +35,13 @@ $(document).ready(function () {
                 }
             );
         } else {
-            newPosition = currentPosition + itemWidth;
+            currentIndex = (currentIndex - 1 + itemCount) % itemCount;
+            $(".carousel-items .item:last").prependTo(".carousel-items");
+            $(".carousel-items").css("left", -itemWidth);
             $(".carousel-items").animate(
-                { left: newPosition },
+                { left: 0 },
                 500,
                 function () {
-                    $(".carousel-items .item:last").prependTo(".carousel-items");
-                    $(".carousel-items").css("left", -itemWidth);
                     updateActiveItem();
                 }
             );
@@ -84,10 +79,9 @@ $(document).ready(function () {
 
     $(".carousel-dots .dot").click(function () {
         var index = $(this).data("index");
-        var activeIndex = $(".carousel-items .item.active").index();
-        var direction = index > activeIndex ? "next" : "prev";
+        var direction = index > currentIndex ? "next" : "prev";
 
-        while (index !== $(".carousel-items .item.active").index()) {
+        while (index !== currentIndex) {
             moveCarousel(direction);
         }
     });

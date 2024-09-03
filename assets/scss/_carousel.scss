@@ -60,27 +60,6 @@
 
 }
 
-// .carousel-items .item img {
-//     width: 100%;
-//     max-width: 4rem;
-//     height: auto;
-//     margin: 0 auto;
-//     border-radius: 50%;
-//     overflow: hidden;
-// }
-
-// .carousel-items .item h5 {
-//     margin-top: 10px;
-//     font-size: 14px;
-//     font-weight: 700;
-//     text-transform: uppercase;
-//     color: var(--color-white);
-// }
-
-// .carousel-items p {
-//     font-size: 14px;
-//     color: rgba(230, 230, 230, 1);
-// }
 
 .carousel-items .item .description-container {
     column-count: 2;
@@ -124,6 +103,12 @@
     width: 1.25rem;
     // fill: #B9B9B9;
     color: black;
+
+    &:hover{
+        path{
+            stroke: var(--orange);
+        }
+    }
 }
 
 .slider-prev {
@@ -145,7 +130,7 @@
 
 .carousel-dots .dot {
     width: 40px;
-    height: 2px;
+    height: 4px;
     margin: 0 5px;
     background-color: #B9B9B9;
     /* border-radius: 50%; */
