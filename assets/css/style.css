@@ -273,7 +273,17 @@ section.dobra_2 .card .bg-svg {
 }
 @media screen and (min-width: 768px) {
   section.dobra_2 .card {
-    height: 36rem;
+    height: 30rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section.dobra_2 .card {
+    height: 33rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  section.dobra_2 .card {
+    height: 28rem;
   }
 }
 
