@@ -90,6 +90,12 @@ section.dobra_4 {
         @media screen and (min-width:1440px) {
             // font-size: 42px;
         }
+
+        &:hover {
+            color: var(--orange);
+            border: solid 2px var(--orange);
+            background-color: transparent;
+        }
     }
 
     .align-end {

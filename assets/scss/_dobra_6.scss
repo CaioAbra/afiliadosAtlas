@@ -8,10 +8,16 @@ footer.dobra_6 {
 footer.dobra_6 .btn-cadastro {
     border-radius: 12px;
     background-color: var(--orange);
-    font-weight: 700;
+    // font-weight: 700;
     text-align: center;
     color: var(--branco);
     max-width: 100%;
+
+    &:hover {
+        color: var(--orange);
+        border: solid 2px var(--orange);
+        background-color: transparent;
+    }
 }
 
 footer.dobra_6 .btn-login {
@@ -22,6 +28,11 @@ footer.dobra_6 .btn-login {
     color: var(--orange);
     max-width: 100%;
     border: 1px solid var(--orange);
+
+    &:hover {
+        color: var(--branco);
+        background-color: var(--orange);
+    }
 }
 
 footer.dobra_6 .footer-end {
@@ -41,6 +52,6 @@ footer.dobra_6 .footer-end {
 }
 
 .footer-end a:hover {
-    color: #e8e8e8;
+    color: var(--orange);
     text-decoration: none;
 }

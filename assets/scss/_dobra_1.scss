@@ -68,6 +68,7 @@
         color: var(--branco);
         max-width: 100%;
         width: 100%;
+        
 
         @media screen and (max-width:768px) {
             font-size: 16px;
@@ -85,6 +86,14 @@
 
         @media screen and (min-width:1440px) {
             // font-size: 42px;
+        }
+
+
+
+        &:hover {
+            color: var(--orange);
+            border: solid 2px var(--orange);
+            background-color: transparent;
         }
     }
 

@@ -68,5 +68,16 @@ section.dobra_2 {
             margin-top: 2rem;
             margin-left: 1rem;
         }
+
+        .bg-svg{
+            margin-top: 2rem;
+            margin-left: 1rem;
+            background-color: var(--orange);
+            width: 65px;
+            height: 65px;
+            border-radius: 12px;
+            text-align: center;
+            align-content: center;
+        }
     }
 }

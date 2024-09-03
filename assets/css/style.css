@@ -63,10 +63,10 @@ header#header nav.navbar .btn-login {
   text-transform: uppercase;
   color: var(--orange);
   border: solid 2px var(--orange);
+  transition: all 0.5s ease;
   border-radius: 10px;
   padding: 9px, 25px, 9px, 25px;
   gap: 10px;
-  transition: all 0.5s ease;
 }
 header#header nav.navbar .btn-login:hover {
   color: var(--branco);
@@ -163,6 +163,11 @@ header#header nav.navbar .btn-login:hover {
     font-size: 22px;
   }
 }
+.dobra_1 a.btn-hero:hover {
+  color: var(--orange);
+  border: solid 2px var(--orange);
+  background-color: transparent;
+}
 .dobra_1 p.text-light-hero {
   color: var(--black);
   font-weight: 400;
@@ -251,6 +256,16 @@ section.dobra_2 .card {
 section.dobra_2 .card svg {
   margin-top: 2rem;
   margin-left: 1rem;
+}
+section.dobra_2 .card .bg-svg {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  background-color: var(--orange);
+  width: 65px;
+  height: 65px;
+  border-radius: 12px;
+  text-align: center;
+  align-content: center;
 }
 
 section.dobra_3 h2 {
@@ -363,6 +378,11 @@ section.dobra_4 a.btn-hero {
     font-size: 22px;
   }
 }
+section.dobra_4 a.btn-hero:hover {
+  color: var(--orange);
+  border: solid 2px var(--orange);
+  background-color: transparent;
+}
 section.dobra_4 .align-end {
   align-items: end;
 }
@@ -427,6 +447,12 @@ section.dobra_5 a.btn-hero {
     font-size: 22px;
   }
 }
+section.dobra_5 a.btn-hero:hover {
+  color: var(--orange);
+  border: solid 2px var(--orange);
+  background-color: transparent;
+}
+
 footer.dobra_6 {
   background-color: #ebebeb;
   padding-top: 2rem;
@@ -437,10 +463,14 @@ footer.dobra_6 {
 footer.dobra_6 .btn-cadastro {
   border-radius: 12px;
   background-color: var(--orange);
-  font-weight: 700;
   text-align: center;
   color: var(--branco);
   max-width: 100%;
+}
+footer.dobra_6 .btn-cadastro:hover {
+  color: var(--orange);
+  border: solid 2px var(--orange);
+  background-color: transparent;
 }
 
 footer.dobra_6 .btn-login {
@@ -450,6 +480,10 @@ footer.dobra_6 .btn-login {
   color: var(--orange);
   max-width: 100%;
   border: 1px solid var(--orange);
+}
+footer.dobra_6 .btn-login:hover {
+  color: var(--branco);
+  background-color: var(--orange);
 }
 
 footer.dobra_6 .footer-end {
@@ -469,7 +503,7 @@ footer.dobra_6 .footer-end {
 }
 
 .footer-end a:hover {
-  color: #e8e8e8;
+  color: var(--orange);
   text-decoration: none;
 }
 
@@ -625,6 +659,10 @@ body {
 
 .color-orange {
   color: var(--orange);
+}
+
+.btn {
+  transition: all 0.5s ease !important;
 }
 
 /*# sourceMappingURL=style.css.map */
